@@ -32,5 +32,11 @@ public class Camion extends Vehiculo {
         this.capacidadCarga = capacidadCarga;
     }
 
-
+    @Override
+    public String toString() {
+        String info = super.toString();
+        info += "\tCapacidad de carga: " + this.getCapacidadCarga() + " toneladas\n";
+        info += "\tKmTotales: " + this.getKmTotales() + "\n";
+        return info;
+    }
 }
